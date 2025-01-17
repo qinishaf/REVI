@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Reviews</title>
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        background-color: #fffae9;
+        margin: 40px;
+        padding: 50px;
+        color: #704728;
+        position: relative;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0; 
+    }
+
+    .logo img {
+        max-width: 200px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        text-align: right;
+        margin-bottom: 20px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #704728;
+        color: #fffae9;
+    }
+
+    /* Pinterest-style grid container */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+        gap: 20px; /* Space between grid items */
+        padding: 20px; /* Padding around the grid */
+        max-width: 1200px; /* Center the content */
+        margin: 0 auto; /* Align container in the center */
+    }
+
+    /* Individual grid items */
+    .grid-item {
+        overflow: hidden; /* Ensures images do not overflow their container */
+        border-radius: 8px; /* Rounded corners for images */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+    }
+
+    /* Style for images inside the grid */
+    .grid-item img {
+        width: 100%; /* Make images responsive to container width */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Removes extra space below images */
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    }
+
+    /* Hover effect on images */
+    .grid-item img:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+        cursor: pointer;
+    }
+
+    /* Footer styling */
+    .footer {
+        text-align: center;
+        font-size: medium;
+        margin-top: 50px;
+    }
+</style>
+</head>
+<body>
+<!-- Logo Section -->
+<div class="logo">
+    <img src="logo.png" alt="REVI LOGO">
+</div>
+
+<!-- Navigation Links -->
+<div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="bookreviews.html">Book Reviews</a>
+    <a href="signup.html">Sign Up</a>
+</div>
+
+<h1>Library Collection</h1>
+
+<!-- Pinterest-Style Grid -->
+<div class="container">
+    <div class="grid-item">
+        <a href="mybookreviews.html#pride-and-prejudice">
+            <img src="Pride and Prejudice - cover.jpeg" alt="Pride and Prejudice">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#thousand-splendid-suns">
+            <img src="Little women - cover.jpeg" alt="Little Women">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#kite-runner">
+            <img src="The kite runner 🪁 - cover.jpg" alt="The Kite Runner">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#tuesdays-with-morrie">
+            <img src="Tuesdays with Morrie - Cover.jpeg" alt="Tuesdya's With Morrie">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html">
+            <img src="A little life - cover.jpg" alt="A Little Life">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#all-the-light">
+            <img src="All The Light We Cannot See - Cover.jpg" alt="All the Light We Cannot See">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="Blue sisters, Coco Mellors - cover.jpeg" alt="Blue Sisters">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#poetry-aesthetic">
+            <img src="white nights - cover.jpg" alt="White Nights">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="where the crawdads sing - cover.jpg" alt="Where the Crawdads Sing">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#the-seven-year-slip">
+            <img src="the seven year slip - cover.jpeg" alt="The Seven Year Slip">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#the-silent-patient">
+            <img src="The Silent Patient - cover.jpeg" alt="The Silent Patient">
+        </a>
+    </div>
+    
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="Psychology of Money Book - cover.jpeg" alt="The Psycholgy of Money">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="Normal people - cover.jpeg" alt="Normal People">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="Surrounded By Idiots - cover.jpeg" alt="Surrounded By Idiots">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="Before the Coffee Gets Cold - cover.jpeg" alt="Before The Coffee Gets Cold">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="no longer human - cover.jpeg" alt="No Longer Human">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="the hate u give - cover.jpeg" alt="The Hate You Give">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="The 48 Laws of Power - cover.jpeg" alt="The 48 Laws of Power">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="what my mother and i dont talk about - cover.jpeg" alt="What My Mother And I Don't Talk About">
+        </a>
+    </div> 
+     <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="40 rules of love - cover.jpg" alt="Forty Rules of Love">
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="the mountain is you - cover.jpeg" alt="The Mountain Is You">
+        </a>
+    </div>
+        <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="Jane Eyre - cover.jpeg" alt="Jane Eyre">
+        </a>
+    </div>  
+    <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="When breath becomes air - cover.jpeg" alt="When Breath Becomes Air">
+        </a>
+    </div>
+  <div class="grid-item">
+        <a href="mybookreviews.html#where-the-crawdads-sing">
+            <img src="Atomic Habits Book - cover.jpeg" alt="Atomic Habits">
+        </a>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <p>© 2024 My Book Reviews. All Rights Reserved.</p>
+</div>
+</body>
+</html>

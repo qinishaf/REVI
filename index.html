@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVI</title>
+    <style>
+        body { 
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #fffae9;
+            margin: 40px;
+            padding: 50px;
+            color: #704728;
+            position: relative;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #704728;
+            color: #fffae9;
+        }
+
+        /* Catchphrase Styling */
+        .intro-text {
+            text-align: left;
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        /* Flexbox for aligning text and image */
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .text-box {
+            font-size: 17px;
+            line-height: 1.5;
+            max-width: 800px;
+            margin-top: 10px;
+            min-height: 350px;
+        }
+
+        /* Image Box (Book of the Month) Styling */
+        .image-box {
+            max-width: 300px;
+            text-align: right;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            border: 2px solid #704728; 
+            border-radius: 8px; 
+        }
+
+        .logo img {
+            max-width: 200px;
+            display: block;
+            margin: 20px auto;
+    
+        }
+
+        /* Link Styling */
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .image-box a {
+            color: #704728;
+        }
+
+        .image-box a:hover {
+            text-decoration: underline;
+            font-size: 25px;
+            color: #704728;
+        }
+
+     /* Video Section Styling */
+.video-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: -300px;
+    width: 100%;
+    max-width: 900px;
+    height: 250px; 
+}
+
+ .video {
+    width: 40%; 
+    height: 98%; 
+    object-fit: cover; 
+    border: 2px solid #704728; 
+    border-radius: 8px; 
+}
+
+#aligned-images {
+    margin-top: -200px; /* Move the image section higher, closer to the text */
+    display: flex; /* Keep using flexbox for image alignment */
+    justify-content: space-between; /* Distribute images evenly */
+    gap: 10px; /* Spacing between images */
+    width: 100%; /* Match the video container's width */
+    max-width: 900px; /* Same max-width as the video container */
+    box-sizing: border-box; /* Include padding/border in the width */
+}
+
+#aligned-images img {
+    width: 30%; /* Each image takes up 30% of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images are cropped neatly */
+    border: 2px solid #704728; /* Border to match the theme */
+    border-radius: 8px; /* Rounded corners for aesthetics */
+}
+
+/* Flexbox container to align images and invitation side by side */
+.image-and-invitation {
+    display: flex; /* Align content in a row */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 145px; /* Space between images and invitation */
+    width: 100%;
+    margin: 20px 0; /* Margin to separate sections */
+
+}
+
+/* Invitation Section Styling (Smaller) */
+.invitation-container {
+    width: 25%; /* Make the invitation container smaller */
+    padding: 15px; /* Reduced padding */
+    background-color: #f7e9d7; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #704728; /* Border to match the theme */
+    display: flex;
+    flex-direction: column; /* Stack paragraph and button vertically */
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+    margin-bottom: 40px;
+}
+
+.invitation-container p {
+    font-size: 1.08em; /* Slightly smaller text size */
+    margin-bottom: 40px; /* Reduced space between text and button */
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 30px; /* Smaller button size */
+    background-color: #704728;
+    color: #fffae9;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Slightly smaller font size */
+}
+
+.btn:hover {
+    background-color: #563a29; /* Darken button on hover */
+}
+
+
+        .footer {
+            text-align: center;
+            font-size: medium;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="logo.png" alt="REVI LOGO">
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="bookreviews.html">Book Reviews</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+
+    <!-- Catchphrase Above the Video -->
+    <div class="intro-text">
+        <p>Welcome to REVI – Where Stories Come Alive</p>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <!-- Content Text on the Left -->
+        <div class="text-box">
+            <p> Welcome to REVI! Whether you're a lifelong reader or just dipping your toes into the literary world, REVI is here to guide you on an exciting journey through stories that captivate, challenge, and inspire.  
+
+                Think of us as your personal book scout—our summaries get straight to the point, highlighting the key insights to spark your curiosity and help you decide what to explore next. No fluff, no filler—just the core ideas that ignite your imagination.  
+                
+                So, what are you waiting for? Dive into books that leave a mark and join conversations that make them unforgettable. 
+
+            </p>
+        </div>
+
+        <!-- Book of the Month Image on the Right -->
+        <div class="image-box">
+            <a href="bookreviews.html">
+                <img src="where the crawdads sing - cover.jpg" alt="Book Cover">
+                <div class="book-of-the-month">
+                    <strong>Walk through our digital library!</strong>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Video Section Below the Content -->
+    <div class="video-container">
+        <video autoplay muted loop class="video">
+            <source src="blue books video.mp4" type="video/mp4">
+        </video>
+
+        <video autoplay muted loop class="video">
+            <source src="pink book video.mp4" type="video/mp4">
+        </video>
+
+        <video autoplay muted loop class="video">
+            <source src="green book video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+        <!-- Main Content Section -->
+        <div class="main-content">
+            <!-- Content Text on the Left -->
+            <div class="text-box">
+                <p> 
+                    REVI hosts monthly book clubs to bring together people who share a passion for
+                    great stories and thought-provoking conversations. Whether you're into gripping thrillers, heartwarming tales,
+                    or inspiring non-fiction, there's a spot here just for you. These meetups are all about connecting, sharing ideas, 
+                    and having fun—no pressure, just great reads and even better company. 
+                </p>
+            </div>
+        </div>
+
+<!-- New Image Section Below, Aligned with Video Container -->
+<div class="image-and-invitation">
+    <!-- Aligned Images Section -->
+    <div id="aligned-images">
+        <img src="book club -1.jpeg" alt="Book Club Image 1">
+        <img src="book club group.jpeg" alt="Book Club Image 2">
+        <img src="Book club aesthetic.jpeg" alt="Book Club Image 3">
+    </div>
+
+    <!-- Invitation Section -->
+    <div class="invitation-container">
+        <p>Join the REVI community for updates on new collections, reviews and location of our next meetup!</p>
+        <a href="signup.html" class="btn">Join Now</a>
+    </div>
+</div>
+
+    <footer class="footer">
+        <p>© 2024 REVI. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join REVI</title>
+<style>
+
+    /* Center Logo */
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px; /* Increased margin for more space around the logo */
+    }
+
+    .logo img {
+        max-width: 200px;
+        display: block;
+        margin: 15px auto;
+    }
+
+    /* Body Styling */
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        background-color: #fffae9;
+        color: #704729;
+        display: flex;
+        flex-direction: column; 
+        min-height: 100vh; 
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        text-align: right;
+        margin-right: 70px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #704728;
+        color: #fffae9;
+    }
+
+    /* Form Styling */
+    form {
+        display: inline-block;
+        text-align: center;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    /* Input and Button Styling */
+    input, button {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Submit Button Styling */
+    button {
+        background-color: #704729;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #5a3921;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer Styling */
+    .footer {
+        text-align: center;
+        font-size: medium;
+        color: #704729;
+        background-color: #fffae9;
+        padding: 10px 0;
+        margin-top: auto; 
+        width: 100%;
+        position: relative; 
+    }
+
+</style>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyDhqttlOrPZDCclkvJoJ4IzETMV3uwhjdU",
+        authDomain: "revi-f1665.firebaseapp.com",
+        databaseURL: "https://revi-f1665-default-rtdb.firebaseio.com",
+        projectId: "revi-f1665",
+        storageBucket: "revi-f1665.firebasestorage.app",
+        messagingSenderId: "36355014222",
+        appId: "1:36355014222:web:732f395f4c6392459c8d1f",
+        measurementId: "G-GHLF6762BN"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    // Reference to the Realtime Database
+    const database = firebase.database();
+
+    // Submit Form Data to Firebase
+    function submitContactForm(event) {
+        event.preventDefault(); // Prevent page reload
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+
+        database.ref('contacts').push({
+            name: name,
+            email: email,
+        })
+        .then(() => {
+            alert('Your message has been sent successfully!');
+            document.getElementById('contactForm').reset();
+        })
+        .catch((error) => {
+            alert('Error: ' + error.message);
+        });
+    }
+</script>
+
+</head>
+<body>
+
+    <!-- Logo Section -->
+    <div class="logo">
+        <img src="logo.png" alt="REVI LOGO">
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="bookreviews.html">Book Reviews</a>
+        <a href="signup.html">Sign Up</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Welcome to the REVI community!</h1>
+        <form id="contactForm" onsubmit="submitContactForm(event)">
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2024 My Book Reviews. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
